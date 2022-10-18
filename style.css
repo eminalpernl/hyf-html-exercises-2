@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+.navbar{
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+  .navbar-flex{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+  .navbar-logo{
+    width: 130px;
+  }
+
+  .navbar .inloggen {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+  }
+
+
+.fa-sharp,.inloggen{
+    padding: 15px;
+}
+
+/* showcase */
+
+.showcase{
+    background-color: #fdc82c;
+    background-image: url(images/kassa.jpeg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: f;
+    height: 65vh;
+    filter: brightness(70%);
+}
+
+.showcase-flex{
+    position:absolute;
+    bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase-tittle,.showcase-text,.button{
+    padding: 15px 40px;
+    font-weight: 900;
+    color: white;
+    filter: brightness(100%);
+}
+
+.showcase-tittle{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.showcase-text,.button{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.showcase-text{
+    max-width: 70%;
+    line-height: 1.9rem;
+}
+
+.showcase-flex .button{
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    border-radius: 5px;
+    border-color: rgb(192, 195, 196);
+}
+
+/* statement */
+
+.statement-wrap{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statement{
+    height: fit-content;
+    font-family: 'Karla', sans-serif;
+    max-width: 80vw;
+    font-weight: 900;
+
+
+}
+
+.statement-wrap .statement p{
+    line-height: 1.7rem;
+    color: rgb(3, 3, 104);
+}
+
+
+/* blue section */
+.blue-wrap{
+    background-color: rgb(224, 244, 250);
+    height:750px;
+}
+
+.blue-grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 20vh);
+    font-family: 'Oxygen', sans-serif;
+    gap: 50px;
+}
+
+.meest{
+    grid-column:1 / span 3 ;
+    line-height: 2rem;
+    padding: 40px;
+
+
+}
+
+.meest-list,.snel-list{
+    padding-top: 20px;
+    list-style-type: none
+}
+
+
+
+.snel{
+    grid-column: 1 / span 3;
+    line-height: 2rem;
+    padding: 40px;
+}
+
+
+.pasop-wrap{
+    grid-column: 1 / span 3;
+    margin: 20px;
+    padding: 15px;
+    height:max-content;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+.fa-angle-right{
+    padding: 0 10px;
+}
+
+.meest-list li a{
+    color: black;
+    border-bottom: solid 2px gray;
+    text-decoration: none;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.snel-list li a{
+    color: black;
+    border-bottom: solid 2px gray;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.pasop-wrap{
+    background-color: #fff0c3;
+    border-radius: 10px;
+    font-size: .92rem;
+}
+.pasop-content{
+    width: 100%;
+}
+
+.pasop-content h3{
+    padding-top: 15px;
+    padding-left: 25px;
+    font-weight: 900;
+
+}
+
+.pasop-content p{
+    line-height: 1.5rem;
+    color: black;
+}
+
+/* green section */
+
+
+.green-wrap{
+
+    background: linear-gradient(#00531c, #5ea4ff);
+    height: 1000px;;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.foto-1,.foto-2,.foto-3,.foto-4{
+    position: relative;
+    width: 400px;
+    height: 500px; 
+    margin: 15px;
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fotos-wrap{
+    margin-top: 35px;
+    display: flex;
+    width:max-content;
+    height: max-content;
+    position: relative;
+}
+
+.fotos-wrap div img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    filter: brightness(70%);
+
+}
+
+
+.foto-1 h3{
+    color: aliceblue;
+    font-family: 'Oxygen', sans-serif;
+    margin: 25px;
+}
+
+
+.foto-2 h3{
+
+    color: aliceblue;
+    font-family: 'Oxygen', sans-serif;
+    margin: 25px;
+}
+
+
+.foto-3 h3,p{
+    color: aliceblue;
+    font-family: 'Oxygen', sans-serif;
+    margin: 25px;
+}
+
+
+.foto-4 h3,p{
+    color: aliceblue;
+    font-family: 'Oxygen', sans-serif;
+    margin: 25px;
+}
+
+
+
+/* Tablets and under */
+
+@media only screen and (max-width: 600px) {
+.showcase{
+    background-size: 90%;
+}
+
+.blue-grid{
+
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 30vh);
+    font-family: 'Oxygen', sans-serif;
+    gap: 50px;
+}
+
+
+.meest{
+    grid-column:1 / span 3 ;
+    line-height: 3rem;
+    padding: 40px;
+    font-size: 1.4rem;
+
+}
+
+.snel{
+    grid-column:1 / span 3 ;
+    line-height: 3rem;
+    padding: 40px;
+    font-size: 1.4rem;
+
+}
+.blue-wrap{
+    height: 1000px;
+}
+
+.fotos-wrap{
+    flex-direction: column;
+    margin: auto;
+}
+
+
+}
